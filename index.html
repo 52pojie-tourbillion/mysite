@@ -727,6 +727,12 @@
   }
   @media (prefers-color-scheme: dark){ .video-stuck{ background:#3d1622; border-color:#6d2a3e; color:#f5b3c6; } }
   .video-stuck b{ font-weight:900; }
+  .video-thanks{
+    margin-top:14px; background:#fdf6e0; border:1px solid #ecd28a; border-radius:10px;
+    padding:12px 16px; font-size:14.5px; color:#6b5310;
+  }
+  @media (prefers-color-scheme: dark){ .video-thanks{ background:#38300f; border-color:#6e5c1c; color:#f2dd9a; } }
+  .video-thanks b{ font-weight:900; }
   .res-list{ list-style:none; margin:12px 0 0; padding:0; display:flex; flex-direction:column; gap:8px; font-size:14.5px; }
   .res-list li{ display:flex; gap:10px; flex-wrap:wrap; align-items:baseline; }
   .res-list .res-name{ font-weight:900; min-width:118px; }
@@ -1674,6 +1680,39 @@
         </div>
         <div class="join-note"><b>FCL 路线注意：</b>走的是 Java 版，地址<b>不要加端口</b>，游戏版本必须正好是 <code>1.20.1</code>。手机配置一般的，进游戏后在设置里把渲染距离调低一点，玩起来更流畅。</div>
 
+        <h4 class="route-head"><span class="rn">进阶工具</span> MG 渲染器 + 联机工具 · 可选，不装也能进岛</h4>
+        <p class="panel-lead" style="margin-top:10px;">下面三个都是<b>可选的加装工具</b>：MG 渲染器管画面流不流畅，Terracotta 和 EnchantNet 是你和朋友<b>自己开房间联机</b>时用的。进摸鱼小岛只需要上面的 FCL，这三个不装，完全不影响进岛。</p>
+        <div class="launcher-cards">
+          <div class="launcher-card">
+            <span class="lc-badge lc-free">可选 · 画面更流畅</span>
+            <h4>MG 渲染器（MobileGlues 2.0.0）</h4>
+            <p>给 FCL 换的<b>第三方渲染器</b>：不少机型换上它之后帧数更稳，黑屏、花屏也好了。<b>装法：</b>下好 APK 直接安装，再回 FCL 设置里把<b>渲染器切到 MobileGlues</b>，重新启动游戏生效。FCL 自带渲染器能正常玩的，不用折腾这个。下载走 GitHub 加速，点一下直接下，不用网盘。</p>
+            <div class="dl-actions">
+              <a class="dl-btn dl-btn-main" href="https://ghfast.top/https://github.com/MobileGL-Dev/MobileGlues-release/releases/download/V2.0.0/MobileGlues_2.0.0.apk">⬇ MG 2.0.0 APK · GitHub 加速下载</a>
+              <a class="dl-btn dl-btn-sub" href="https://github.com/MobileGL-Dev/MobileGlues-release/releases" target="_blank" rel="noopener">GitHub 官方发布页（备用）</a>
+            </div>
+            <p class="dl-note">安装包约 <b>11 MB</b>，是 MobileGlues 官方 GitHub 仓库 2.0.0 版的原包，加速只是帮你下得快一点；加速打不开时去发布页下同名文件 <b>MobileGlues_2.0.0.apk</b>。</p>
+          </div>
+          <div class="launcher-card">
+            <span class="lc-badge lc-official">联机工具 · 本站服务器</span>
+            <h4>Terracotta（陶土）1.0.0</h4>
+            <p>和朋友<b>点对点联机</b>用的工具：一个人开世界当房主，其他人通过它连进来一起玩，不用服务器也能联机。它是给「你和朋友自己开房」准备的，<b>进摸鱼小岛用不着它</b>——进岛直接在 FCL 里加服务器地址就行。</p>
+            <div class="dl-actions">
+              <a class="dl-btn dl-btn-gold" href="http://160.202.241.239:8080/Terracotta-1.0.0.apk">⬇ 本站服务器下载 APK（国内快）</a>
+            </div>
+            <p class="dl-note">本站给的是 <b>Terracotta 1.0.0</b> 安装包（约 46 MB），放在本站自己的服务器上，点按钮直接下完就能装。</p>
+          </div>
+          <div class="launcher-card" style="grid-column:1/-1;">
+            <span class="lc-badge lc-official">联机工具 · 本站服务器</span>
+            <h4>EnchantNet 1.2（FCL 联机工具）</h4>
+            <p>另一款给 FCL 用的联机工具，走<b>邀请码房间</b>：房主建房拿到邀请码，朋友输码就能加入，<b>专门适配 FCL</b>。和 Terracotta 二选一即可，哪个顺手用哪个；同样，<b>进摸鱼小岛用不着它</b>，它是你们自己开房联机时才派上用场。</p>
+            <div class="dl-actions">
+              <a class="dl-btn dl-btn-gold" href="http://160.202.241.239:8080/EnchantNet-1.2.apk">⬇ 本站服务器下载 APK（国内快）</a>
+            </div>
+            <p class="dl-note">本站给的是 <b>EnchantNet 1.2</b> 安装包（约 43 MB），放在本站自己的服务器上，点按钮直接下完就能装。</p>
+          </div>
+        </div>
+
         <h4 class="route-head"><span class="rn paid">官方路线</span> 基岩版 · 买了游戏的看这里</h4>
         <ol class="steps">
           <li>
@@ -2388,7 +2427,7 @@
 
         <article class="faq-item" data-cat="android" data-keywords="mg 渲染器 mobileglues mobilegl renderer 性能 帧数">
           <h4 class="faq-qwrap"><button class="faq-q" type="button" aria-expanded="false"><span class="faq-tag tag-android">安卓</span><span class="faq-qtext">MG 渲染器（MobileGlues）是什么？要不要装？</span><span class="faq-chev" aria-hidden="true"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="m5 9 7 7 7-7" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button></h4>
-          <div class="faq-a"><div class="faq-a-inner"><div class="faq-a-body">它是给 FCL 用的一个<b>第三方渲染器</b>（现在是 <code>MobileGlues 2.0.0</code>），作用是让 Java 版在手机 GPU 上画得更顺：不少机型换上它之后帧数更稳、黑屏花屏也好了。<b>不是必装的</b>——FCL 自带渲染器能正常玩就不用折腾；遇到黑屏、花屏或者帧数特别低，再按安卓教程里的链接装 MG 并在 FCL 设置里把渲染器切过去试。只从教程给的 GitHub 官方仓库下，别装来路不明的改版渲染器。</div></div></div>
+          <div class="faq-a"><div class="faq-a-inner"><div class="faq-a-body">它是给 FCL 用的一个<b>第三方渲染器</b>（现在是 <code>MobileGlues 2.0.0</code>），作用是让 Java 版在手机 GPU 上画得更顺：不少机型换上它之后帧数更稳、黑屏花屏也好了。<b>不是必装的</b>——FCL 自带渲染器能正常玩就不用折腾；遇到黑屏、花屏或者帧数特别低，再按安卓教程「进阶工具」里的 <b>GitHub 加速直链</b>装 MG（加速的也是 GitHub 官方原包），并在 FCL 设置里把渲染器切过去试。只从教程给的链接下，别装来路不明的改版渲染器。</div></div></div>
         </article>
 
         <article class="faq-item" data-cat="android" data-keywords="基岩 xbox 微软账号 登录 服务器 官方版">
@@ -2549,20 +2588,22 @@
       <ol class="video-steps">
         <li><b>装 FCL 启动器：</b><p>下好 APK 打开安装，系统拦「未知应用」时点设置允许。本站安卓教程里有放在本站服务器上的 <b>1.3.4.8 arm64 包</b>，点一下就下，不用翻 GitHub。</p></li>
         <li><b>建离线账号：</b><p>打开 FCL → 账号管理 → 添加账号选<b>离线账号</b>，起个名字（就是岛上的游戏名），不用微软账号、不用花钱。</p></li>
-        <li><b>（可选）装 MG 渲染器：</b><p>先不装也能玩；遇到<b>黑屏、花屏、帧数特别低</b>再装：下好 MobileGlues 的 APK 装上，回 FCL 设置里把<b>渲染器切到 MG / MobileGlues</b> 再启动，不少机型帧数会稳很多。</p></li>
+        <li><b>（可选）装 MG 渲染器：</b><p>先不装也能玩；遇到<b>黑屏、花屏、帧数特别低</b>再装：本站下面给了 <b>GitHub 加速直链</b>，点一下直接下 MobileGlues 2.0.0 的 APK，不用网盘；装上后回 FCL 设置里把<b>渲染器切到 MG / MobileGlues</b> 再启动，不少机型帧数会稳很多。</p></li>
         <li><b>下载版本 1.20.1：</b><p>在 FCL 下载页选 <b>1.20.1</b>（别下成 1.21），FCL 自带运行环境，不用另外装 Java，等它下完点启动。</p></li>
         <li><b>加服务器：</b><p>主菜单「多人游戏」→「添加服务器」，名称 <b>摸鱼小岛</b>，地址 <code>mc.jasonyong.de5.net</code>，FCL 是 Java 版<b>不用填端口</b>。</p></li>
         <li><b>进服直接玩：</b><p>连上就能直接玩，不用注册、不用输密码；进大厅输 <code>/menu</code> 选玩法。</p></li>
       </ol>
       <ul class="res-list">
-        <li><span class="res-name">FCL 启动器下载</span><a href="https://pan.quark.cn/s/1e995163ef9e" target="_blank" rel="noopener">夸克网盘（视频简介链接）</a><span>·</span><a href="https://github.com/FCL-Team/FoldCraftLauncher/releases" target="_blank" rel="noopener">官方 GitHub 发布页</a></li>
-        <li><span class="res-name">MG 渲染器下载</span><a href="https://pan.quark.cn/s/e1ef9df7b21c" target="_blank" rel="noopener">夸克网盘（视频简介链接）</a><span>·</span><a href="https://github.com/MobileGl-Dev/MobileGlues-release/releases" target="_blank" rel="noopener">官方 GitHub 发布页</a></li>
-        <li><span class="res-name">FCL 联机工具</span><a href="https://pan.quark.cn/s/7a4276a3ec0d" target="_blank" rel="noopener">夸克网盘（视频简介链接）</a></li>
+        <li><span class="res-name">FCL 启动器下载</span><a href="http://160.202.241.239:8080/FCL-release-1.3.4.8-arm64-v8a.apk">本站服务器下载（国内快）</a><span>·</span><a href="https://github.com/FCL-Team/FoldCraftLauncher/releases" target="_blank" rel="noopener">官方 GitHub 发布页</a><span>·</span><a href="https://pan.quark.cn/s/1e995163ef9e" target="_blank" rel="noopener">夸克网盘（视频简介原链接）</a></li>
+        <li><span class="res-name">MG 渲染器下载</span><a href="https://ghfast.top/https://github.com/MobileGL-Dev/MobileGlues-release/releases/download/V2.0.0/MobileGlues_2.0.0.apk">GitHub 加速直链（2.0.0）</a><span>·</span><a href="https://github.com/MobileGl-Dev/MobileGlues-release/releases" target="_blank" rel="noopener">官方 GitHub 发布页</a><span>·</span><a href="https://pan.quark.cn/s/e1ef9df7b21c" target="_blank" rel="noopener">夸克网盘（视频简介原链接）</a></li>
+        <li><span class="res-name">Terracotta 联机工具</span><a href="http://160.202.241.239:8080/Terracotta-1.0.0.apk">本站服务器下载 1.0.0（国内快）</a></li>
+        <li><span class="res-name">EnchantNet 联机工具</span><a href="http://160.202.241.239:8080/EnchantNet-1.2.apk">本站服务器下载 1.2（国内快）</a><span>·</span><a href="https://pan.quark.cn/s/7a4276a3ec0d" target="_blank" rel="noopener">夸克网盘（视频简介「FCL 联机工具」原链接）</a></li>
       </ul>
+      <p class="video-thanks"><b>感谢您收看这期视频。</b>这套 FCL 教程是 B 站 UP 主录制、整理的，<b>制作不易</b>——如果它帮到了你，<b>希望能给原视频一个三连支持</b>（点赞、投币、收藏），这是对作者最好的鼓励。</p>
       <div class="video-actions">
         <button class="btn btn-green" type="button" data-goto-tab="android">回安卓文字教程 · 对着示意图一步步做 →</button>
       </div>
-      <p class="video-stuck"><b>还是看不懂？</b>回安卓文字教程，那边每一步都配了示意图，对着图检查你卡在哪一步；FCL 装不上、闪退、渲染器切换的问题，下方「常见问题 · 安卓」分类里也都有。这套教程来自 B 站 UP 主的整理，觉得有用，记得回原视频给人家点个三连支持一下，制作不易。</p>
+      <p class="video-stuck"><b>还是看不懂？</b>回安卓文字教程，那边每一步都配了示意图，对着图检查你卡在哪一步；FCL 装不上、闪退、渲染器切换的问题，下方「常见问题 · 安卓」分类里也都有。</p>
     </article>
 
     <p style="text-align:center; color:var(--muted); font-size:14.5px; margin:6px 0 0;">看完视频回游戏：地址 <button class="mini-copy" type="button" data-copy="mc.jasonyong.de5.net">mc.jasonyong.de5.net <small>复制地址</small></button> · Java 版 1.20.1 · 基岩版端口 19132</p>
