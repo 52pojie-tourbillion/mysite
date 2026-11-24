@@ -831,11 +831,11 @@
   /* ---------- Language switcher ---------- */
   .lang-switch{ display:inline-flex; align-items:center; gap:6px; margin-left:8px; background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.28); border-radius:6px; padding:5px 8px; flex-shrink:0; color:#fff; }
   .lang-switch svg{ flex-shrink:0; opacity:.85; }
-  .lang-switch select{ background:transparent; border:0; color:#fff; font:inherit; font-size:13.5px; font-weight:700; cursor:pointer; max-width:110px; padding:2px 0; }
+  .lang-switch select{ background:transparent; border:0; color:#fff; font:inherit; font-size:13.5px; font-weight:700; cursor:pointer; width:auto; padding:2px 0; }
   .lang-switch select option{ color:#1c2416; }
   @media (max-width:640px){
     .lang-switch{ margin-left:6px; padding:4px 6px; }
-    .lang-switch select{ max-width:94px; font-size:12.5px; }
+    .lang-switch select{ font-size:12.5px; }
   }
   /* Non-Chinese languages: tighter nav type so the bar fits at desktop widths */
   html:not([lang="zh-CN"]) nav.links a{ font-size:12.5px; padding-left:7px; padding-right:7px; }
